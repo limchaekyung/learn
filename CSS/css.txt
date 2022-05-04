@@ -1,0 +1,143 @@
+# CSS Syntax
+
+selector{
+    property1: value;
+    property2: value;
+}
+
+# CSS Selectors
+
+1) Element
+h1, div, header, footer, span, strong, a{
+    color: blue;
+}
+
+2) Class
+<h1 class="big-header">
+    Title
+</h1>
+
+<a href="index.html">
+    Home
+</a>
+
+<div class="red square">
+    Content
+</div>
+
+.class-name{
+    property: value;
+}
+
+<button class="btn btn-1">
+    button 1
+</button>
+<button class="btn btn-2">
+    button 2
+</button>
+<button class="btn btn-3">
+    button 3
+</button>
+
+.btn{
+    padding: 10px;
+    color: white;
+}
+.btn-1{ background-color: green; }
+.btn-2{ background-color: blue; }
+.btn-3{ background-color: purple; }
+
+3) ID
+<h1 id="main-header">
+    Title
+</h1>
+
+#id{
+    property: value;
+}
+
+# CSS Selector Combinations
+
+.selector-1.selector-2{
+    property: value;
+}
+
+<h1 class="large-heading">
+    Title
+</h1>
+
+h1.large-header{
+    font-size: 200%;
+}
+
+<h2 id="big-blue" class="large blue">
+    Title
+</h2>
+
+#big-blue.large.blue{
+    color: blue;
+    font-size: 200%;
+}
+
+.ancestor .child{
+    property: value;
+}
+
+<div>
+    <p>Selected</p>
+    <p>Selected</p>
+    <span>
+        <p>Selected</p>
+    </span>
+</div>
+
+div p{
+    color: red;
+}
+
+<header class="main-header">
+    <h1 class="brown">
+        Selected
+    </h1>
+</header>
+
+header.main-header h1.brown{
+    color: brown;
+}
+
+.big{
+    font-size: 200%;
+}
+
+.large{
+    font-size: 200%;
+}
+
+.big, .large{
+    font-size: 200%;
+}
+
+*{
+    font-family: Arial;
+}
+
+# How to Load CSS
+
+1) Inline
+<h1 style="color: blue">
+    Blue Title
+</h1>
+
+2) Style Element
+<head>
+    <style>
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+
+3) External CSS
+<head>
+    <link rel="stylesheet" href="style.css" />
+</head>

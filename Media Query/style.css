@@ -1,0 +1,31 @@
+body{
+    color: red;
+}
+
+.title{
+    font-size: 6rem;
+}
+
+.subtitle{
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    body{
+        color: blue;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 500px) {
+    /* 세로모드 */
+    .title{
+        color: green;
+    }
+}
+
+@media (orientation: portrait) {
+    /* 가로모드 */
+    .subtitle{
+        color: cyan;
+    }
+}

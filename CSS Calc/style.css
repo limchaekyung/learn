@@ -1,0 +1,7 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color: red;
+    height: 100px;
+}

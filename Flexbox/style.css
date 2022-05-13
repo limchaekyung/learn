@@ -14,15 +14,17 @@
 .flexbox-item-1{
     flex: 1;
     min-height: 100px;
-    flex-shrink: 0;
+    flex-shrink: 0; /* flex container의 공간이 부족해질 때 
+                        axis 방향 크기가 얼마나 줄어들 수 있는 지 지정 */
     align-self: flex-end;
     order: 3;
 }
 
 .flexbox-item-2{
     min-height: 200px;
-    flex-grow: 2;
-    flex-basis: 0;
+    flex-grow: 2;   /* flex container의 공간이 남을 경우 
+                        flex item의 flex-basis의 크기가 얼마나 할당 가능한지 나타냄 */
+    flex-basis: 0;  /* flex item의 axis(중심선)방향으로의 크기를 지정  */
     align-self: center;
     order: 1;
 }

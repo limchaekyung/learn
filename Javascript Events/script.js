@@ -14,10 +14,10 @@ button.addEventListener("click", e => {
         return
     }
     const doubleClickEvent = new CustomEvent("custom:doubleClick", {
-        bubbles: true,
-        cancelable: true,
+        bubbles: true,  /* true인 경우 이벤트 버블링 */
+        cancelable: true,   /* true인 경우 event.preventDefault()가 동작 */
         composed: true,
-        detail: {
+        detail: {   /* custom events 관련 정보를 저장, 다른 이벤트 프로퍼티와 충돌을 피하기 위함 */
             timeBetweenClicks,
         },
     })

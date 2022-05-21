@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <style>
+        div{
+            background-color: hsl(200, 70%, 30%);
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+        }
+        div{
+            /* transform: scale(1.2) translateX(50px); */
+            transform: scale(var(--scale, 1.2)) translateX(var(--translate-x, 50px)) skew(var(--skew, 10deg));
+            position: relative;
+        }
+        div::after{
+            content: 'After';
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .big{
+            /* transform: scale(2) translateX(50px); */
+            --scale: 2;
+        }
+        .move{
+            /* transform: scale(1.2) translateX(-50px); */
+            --translate-x: 50px;
+        }
+        .skew{
+            --skew: 50deg;
+        }
+        /* .big.move{
+            transform: scale(2) translateX(30px);
+        } */
+    </style>
+</head>
+<body>
+ <div class="move big skew">Box</div>   
+</body>
+</html>

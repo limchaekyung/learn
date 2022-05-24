@@ -26,6 +26,7 @@ video{
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
+
 .video-container:hover .video-controls-container,
 .video-container:focus-within .video-controls-container,
 .video-container.paused .video-controls-container{

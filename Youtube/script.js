@@ -1,7 +1,12 @@
 const playPauseBtn = document.querySelector(".play-pause-btn")
+
 const theaterBtn = document.querySelector(".theater-btn")
 const fullscreenBtn = document.querySelector(".full-screen-btn")
 const miniPlayerBtn = document.querySelector(".mini-player-btn")
+
+const muteBtn = document.querySelector(".mute-btn")
+const volumeSlider = document.querySelector(".volume-slider")
+
 const videoContainer = document.querySelector(".video-container")
 const video = document.querySelector("video")
 
@@ -25,7 +30,36 @@ document.addEventListener("keydown", e => {
         case "i":
             toggleminiPlayerMode()
             break
+        case "m":
+            toggleMute()
+            break
     }
+})
+
+// Volume
+muteBtn.addEventListener("click", toggleMute)
+volumeSlider.addEventListener("input", e => {
+    video.volume = e.target.value
+    video.muted = e.target.value === 0
+})
+
+function toggleMute() {
+    video.muted = !video.muted
+
+}
+
+video.addEventListener("volumechange", () => {
+    volumeSlider.value = video.volume
+    let volumeLevel
+    if (video.muted || video.volume === 0) {
+        volumeSlider.value = 0
+        volumeLevel = "muted"
+    } else if (video.volume >= .5) {
+        volumeLevel = "high"
+    } else {
+        volumeLevel = "low"
+    }
+    videoContainer.dataset.volumeLevel = volumeLevel
 })
 
 // View Modes

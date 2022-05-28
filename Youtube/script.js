@@ -7,6 +7,8 @@ const miniPlayerBtn = document.querySelector(".mini-player-btn")
 const muteBtn = document.querySelector(".mute-btn")
 const volumeSlider = document.querySelector(".volume-slider")
 
+const captionsBtn = document.querySelector(".captions-btn")
+
 const currentTimeElem = document.querySelector(".current-time")
 const totalTimeElem = document.querySelector(".total-time")
 
@@ -44,9 +46,23 @@ document.addEventListener("keydown", e => {
         case "l":
             skip(5)
             break
-
+        case "c":
+            toggleCaptions()
+            break
     }
 })
+
+// Captions
+const captions = video.textTracks[0]
+captions.mode = "hidden"
+
+captionsBtn.addEventListener("click", toggleCaptions)
+
+function toggleCaptions() {
+    const isHidden = captions.mode === "hidden"
+    captions.mode = isHidden ? "showing" : "hidden"
+    videoContainer.classList.toggle("captions", isHidden)
+}
 
 // Duration
 video.addEventListener("loadeddata", () => {

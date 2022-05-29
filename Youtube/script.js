@@ -9,6 +9,8 @@ const volumeSlider = document.querySelector(".volume-slider")
 
 const captionsBtn = document.querySelector(".captions-btn")
 
+const speedBtn = document.querySelector(".speed-btn")
+
 const currentTimeElem = document.querySelector(".current-time")
 const totalTimeElem = document.querySelector(".total-time")
 
@@ -51,6 +53,16 @@ document.addEventListener("keydown", e => {
             break
     }
 })
+
+// Playback Speed
+speedBtn.addEventListener("click", changePlaybackSpeed)
+
+function changePlaybackSpeed() {
+    let newPlaybackRate = video.playbackRate + .25
+    if (newPlaybackRate > 2) newPlaybackRate = .25
+    video.playbackRate = newPlaybackRate
+    speedBtn.textContent = `${newPlaybackRate}x`
+}
 
 // Captions
 const captions = video.textTracks[0]

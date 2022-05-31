@@ -63,7 +63,7 @@ timelineContainer.addEventListener("mousemove", handleTimelineUpdate)
 timelineContainer.addEventListener("mousedown", toggleScrubbing)
 
 document.addEventListener("mouseup", e => {
-    if (isScrubbing) toggleScrubbing(e)
+    -toggleScrubbing(e)
 })
 
 document.addEventListener("mousemove-", e => {

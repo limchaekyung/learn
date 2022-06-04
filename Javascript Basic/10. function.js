@@ -1,6 +1,6 @@
 // 함수(function)
 /* function sayHello(name){
-    // 함수 함수명(매개변수)   
+    // 함수 함수명(매개변수)
     console.log(`Hello, ${name}`)
 }
 sayHello('Mike') */
@@ -94,10 +94,20 @@ sayHello('Jane') */
 const result = add(2, 3)
 console.log(result) // 5 */
 
-function showError() {
+/* function showError() {
     alert('에러가 발생했습니다.')
     return
     alert('이 코드는 절대 실행되지 않습니다.')
 }
 const result = showError()
-console.log(result)
+console.log(result) */
+
+/* 
+함수(function)
+- 한번에 한작업에 집중
+- 읽기 쉽고 어떤 동작인지 알 수 있게 네이밍
+    showError       // 에러를 보여줌
+    getName         // 이름을 얻어옴
+    createUserData  // 유저 데이터 생성
+    checkLogin      // 로그인 체크 여부
+*/

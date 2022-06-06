@@ -23,7 +23,7 @@ if (평가 == A) {
 사고 싶은 과일을 물어보고 가격 알려주기
 */
 
-let fruit = prompt('무슨 과일을 사고 싶나요?')
+/* let fruit = prompt('무슨 과일을 사고 싶나요?')
 
 switch (fruit) {
     case 사과:
@@ -42,4 +42,4 @@ switch (fruit) {
     default:
         console.log('그런 과일은 없습니다.')
         break;
-}
+} */

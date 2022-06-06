@@ -10,7 +10,7 @@
 superman.fly()  // 날아갑니다. */
 
 // this
-/* 
+/*
 화살표 함수는 일반 함수와는 달리 자신만의 this를 가지지 않음
 화살표 함수 내에서 this를 사용하면, 그 this는 외부에서 값을 가져 옴
 */
@@ -36,7 +36,7 @@ boy.sayHello()
 // this != boy */
 
 // method
-let boy = {
+/* let boy = {
     name: 'Mike',
     showName: function () {
         // console.log(boy.name)
@@ -51,4 +51,4 @@ boy.showName()  // Mike
 // console.log(boy.name)   //Tom
 
 boy = null
-man.showName()  //boy.name = typeError, this.name = Mike
+man.showName()  //boy.name = typeError, this.name = Mike */

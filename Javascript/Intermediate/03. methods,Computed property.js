@@ -114,3 +114,25 @@ user2.name = "Tom"
 
 console.log(user)   // {name: "Mike", age: 30}
 console.log(user2)  // {name: "Tom", age: 30} */
+
+/* const result = Object.keys(user)
+console.log(result) // ["name", "age"] */
+
+/* const result = Object.values(user)
+console.log(result) // ["Mike", 30] */
+
+/* const result = Object.entries(user)
+console.log(result) */
+/* 
+[
+    ["name", "Mike"],
+    ["age", 30]
+]
+*/
+
+/* let arr = [
+    ["mon", "월"],
+    ["tue", "화"],
+]
+const result = Object.fromEntries(arr)
+console.log(result) // {mon: "월", tue: "화"} */

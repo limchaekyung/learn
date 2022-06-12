@@ -152,7 +152,7 @@ console.log(result)
 // ['H', 'e', 'l', 'l', 'o', ',', ' ', 'M', 'y', ' ', 'n', 'a', 'm', 'e', ' ', 'i', 's', ' ', 'M', 'i', 'k', 'e', '.'] */
 
 // Array.isArray()
-let user = {
+/* let user = {
     name: 'Mike',
     age: 30,
 }
@@ -162,4 +162,4 @@ console.log(typeof user)    // object
 console.log(typeof userList)    // object
 
 console.log(Array.isArray(user))    // false
-console.log(Array.isArray(userList))    // true
+console.log(Array.isArray(userList))    // true */

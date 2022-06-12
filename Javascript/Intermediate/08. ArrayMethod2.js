@@ -44,7 +44,7 @@ const result = arr.reduceRight((prev, cur) => {
 
 console.log(result) // 115 */
 
-let userList = [
+/* let userList = [
     { name: "Mike", age: 30 },
     { name: "Tom", age: 10 },
     { name: "Jane", age: 27 },
@@ -61,10 +61,18 @@ let userList = [
 
 // }, [])
 
+// let result = userList.reduce((prev, cur) => {
+//     return prev += cur.age
+// }, 0)
+
 let result = userList.reduce((prev, cur) => {
-    return prev += cur.age
-}, 0)
+    if (cur.name.length === 3) {
+        prev.push(cur.name)
+    }
+    return prev
+}, [])
 
 console.log(result)
 // ['Mike', 'Jane', 'Sue', 'Harry', 'Steve']
 //  196
+// ['Tom', 'Sue'] */

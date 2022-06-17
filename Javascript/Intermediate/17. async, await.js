@@ -32,7 +32,7 @@ async function showName() {
 console.log('시작')
 showName() */
 
-const f1 = () => {
+/* const f1 = () => {
     return new Promise((res, rej) => {
         setTimeout(() => {
             res('1번 주문 완료')
@@ -71,4 +71,4 @@ async function order() {
     }
     console.log('종료')
 }
-order()
+order() */

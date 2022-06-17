@@ -111,7 +111,7 @@ f1(function () {
     })
 }) */
 
-const f1 = () => {
+/* const f1 = () => {
     return new Promise((res, rej) => {
         setTimeout(() => {
             res('1번 주문 완료')
@@ -159,5 +159,5 @@ Promise.race([f1(), f2(), f3()]).then((res) => {
 //     .catch(console.log)
 //     .finally(() => {
 //         console.log('끝')
-//     })
+//     }) */
 

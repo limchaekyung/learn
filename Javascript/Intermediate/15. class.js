@@ -70,7 +70,7 @@ class Bmw extends Car {
 const z4 = new Bmw('blue') */
 
 // 오버라이딩(overriding)
-class Car {
+/* class Car {
     constructor(color) {    //{}
         this.color = color
         this.wheels = 4
@@ -92,4 +92,4 @@ class Bmw extends Car {
         console.log("PARK")
     }
 }
-// const z4 = new Bmw('blue')
+// const z4 = new Bmw('blue') */
